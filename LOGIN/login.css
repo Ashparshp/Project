@@ -1,0 +1,103 @@
+body {
+  background-image: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Jost', sans-serif;
+  color: #fff;
+}
+
+.box {
+  height: 100vh;
+  padding: 50px 40px 0 40px;
+  font-size: larger;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(222, 19, 19, 0.36);
+  width: 30%;
+  height: 25%;
+  border-radius: 20px;
+  margin: 8% auto;
+  background: linear-gradient(to bottom, rgba(160, 218, 244, 0.4), rgb(235, 209, 101, 0.4));
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: clamp(1rem, 4vw, 3rem);
+  font-family: 'Jost', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  white-space: nowrap;
+  animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.formgrp {
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.button {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  width: 50%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.button:hover {
+  background-color: #374151;
+}
+
+.button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+#link {
+  margin-left: 8% auto;
+  animation: slideIn 1s ease-in-out;
+}
